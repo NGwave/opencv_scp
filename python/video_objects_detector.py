@@ -11,9 +11,9 @@ from math import ceil
 import time
 camera_id = 0 
 
-video_cap = cv2.VideoCapture("video/1.mp4")
+video_cap = cv2.VideoCapture(input('Specify the path to the video: '))
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-writer = video_writer("output1.mp4", fourcc, 15, (1280, 720))
+writer = video_writer("output1.avi", fourcc, 15, (1280, 720))
 
 #class train_finder:
 #	def __init__(self, train_cascade):
